@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.receitaws.com.br/#section-api -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Receita WS - Webservice de Dados de CNPJ_files/NRJS-f2602d8a776ab566d95"></script><script src="./Receita WS - Webservice de Dados de CNPJ_files/nr-spa-1210.min.js.download"></script><script type="text/javascript" async="" src="./Receita WS - Webservice de Dados de CNPJ_files/recaptcha__pt_br.js.download" crossorigin="anonymous" integrity="sha384-c4tMr32FgdiXaeoIyP4Ocql3ckCFBooJNMZ8+5yt3/VFR3qveWKtMrqCjLow0glg"></script><script src="./Receita WS - Webservice de Dados de CNPJ_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Receita WS - Webservice de Dados de CNPJ_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Receita WS - Webservice de Dados de CNPJ_files/plusone.js.download" gapi_processed="true"></script>
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./Receita WS - Webservice de Dados de CNPJ_files/eb9c6c6a891ddaa0c9668f15d3c392f23436d24c.css">  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./Receita WS - Webservice de Dados de CNPJ_files/418c5a58294ab97fbe4960569c8300eaf1a16d8c.css">  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./Receita WS - Webservice de Dados de CNPJ_files/b6d736ad9e6ea9a48f07202221a0609b48b8658e.css">
+<!-- Standard Meta -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="5F57Nix53W7UH71GkYYtB2Xn4vxz5-gqdjXB7oeOl58">
+  <title>Receita WS - Webservice de Dados de CNPJ</title>
+
+  <script async="" src="./Receita WS - Webservice de Dados de CNPJ_files/gtm.js.download"></script><script type="text/javascript">
+  ;window.NREUM||(NREUM={});NREUM.init={distributed_tracing:{enabled:true},privacy:{cookies_enabled:true}};
+  window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(30),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),S=t(7),N=t(14),M=t(9),P=t("ee"),T=P.get("tracer");t(16),y.features.spa=!0;var C,L=0;P.on(u,r),b.on(p,r),M.on(p,r),P.on(d,o),b.on(l,o),M.on(l,o),P.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),N.buffer([u,"new-xhr","send-xhr"+s]),S.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),T.buffer([u,"no-"+u]),M.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(N,"send-xhr"+s),a(P,"xhr-resolved"),a(P,"xhr-done"),a(S,m+s),a(S,m+"-done"),a(M,"new-jsonp"),a(M,"jsonp-end"),a(M,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(22),m=t(21),v=t(18),w=NREUM.o.REQ,g=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;"string"==typeof i?n=i:"object"==typeof i&&i instanceof w?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n);var s=(""+(i&&i instanceof w&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime])})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),s=t(30),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function s(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d=t("handle"),p=t("loader"),l=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(s)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(29),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!S++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),s=t("handle"),c=t(29),f=t("ee"),u=t(27),d=t(24),p=t(20),l=p.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1210.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var S=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);
+  ;NREUM.loader_config={accountID:"2601215",trustKey:"2601215",agentID:"1424118255",licenseKey:"NRJS-f2602d8a776ab566d95",applicationID:"1424118255"}
+  ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"NRJS-f2602d8a776ab566d95",applicationID:"1424118255",sa:1}
+  </script>
+
+  <script type="text/javascript" src="./Receita WS - Webservice de Dados de CNPJ_files/v2"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS89XLF');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Start of HubSpot Embed -->
+  <!-- <script type="text/javascript" src="//js.hs-scripts.com/2708649.js" id="LeadinEmbed-2708649" crossorigin="use-credentials" async defer></script> -->
+  <!-- End of HubSpot Embed -->
+  <script src="./Receita WS - Webservice de Dados de CNPJ_files/sweetalert2@11.js.download" type="text/javascript"></script><style>.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4!important;grid-row:1/4!important;grid-template-columns:1fr 99fr 1fr;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast>*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.3125em;padding:0}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(100,150,200,.5)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:grid;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end" "gap gap gap";grid-template-rows:auto auto auto .625em;height:100%;padding:.625em .625em 0;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container::after{content:"";grid-column:1/4;grid-row:4;height:.625em}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-bottom-start,.swal2-container.swal2-center-start,.swal2-container.swal2-top-start{grid-template-columns:minmax(0,1fr) auto auto}.swal2-container.swal2-bottom,.swal2-container.swal2-center,.swal2-container.swal2-top{grid-template-columns:auto minmax(0,1fr) auto}.swal2-container.swal2-bottom-end,.swal2-container.swal2-center-end,.swal2-container.swal2-top-end{grid-template-columns:auto auto minmax(0,1fr)}.swal2-container.swal2-top-start>.swal2-popup{align-self:start}.swal2-container.swal2-top>.swal2-popup{grid-column:2;align-self:start;justify-self:center}.swal2-container.swal2-top-end>.swal2-popup,.swal2-container.swal2-top-right>.swal2-popup{grid-column:3;align-self:start;justify-self:end}.swal2-container.swal2-center-left>.swal2-popup,.swal2-container.swal2-center-start>.swal2-popup{grid-row:2;align-self:center}.swal2-container.swal2-center>.swal2-popup{grid-column:2;grid-row:2;align-self:center;justify-self:center}.swal2-container.swal2-center-end>.swal2-popup,.swal2-container.swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;align-self:center;justify-self:end}.swal2-container.swal2-bottom-left>.swal2-popup,.swal2-container.swal2-bottom-start>.swal2-popup{grid-column:1;grid-row:3;align-self:end}.swal2-container.swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;justify-self:center;align-self:end}.swal2-container.swal2-bottom-end>.swal2-popup,.swal2-container.swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;align-self:end;justify-self:end}.swal2-container.swal2-grow-fullscreen>.swal2-popup,.swal2-container.swal2-grow-row>.swal2-popup{grid-column:1/4;width:100%}.swal2-container.swal2-grow-column>.swal2-popup,.swal2-container.swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}.swal2-container.swal2-no-transition{transition:none!important}.swal2-popup{display:none;position:relative;box-sizing:border-box;width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-title{position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0;padding:0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px transparent;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7367f0;color:#fff;font-size:1em}.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px rgba(115,103,240,.5)}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#ea5455;color:#fff;font-size:1em}.swal2-styled.swal2-deny:focus{box-shadow:0 0 0 3px rgba(234,84,85,.5)}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7d88;color:#fff;font-size:1em}.swal2-styled.swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,125,136,.5)}.swal2-styled.swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled:focus{outline:0}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto!important;height:.25em;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:2em auto 1em}.swal2-close{z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-html-container{z-index:1;justify-content:center;margin:0;padding:1em 1.6em .3em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em 2em 0}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px transparent;color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em 2em 0;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{width:75%;margin-right:auto;margin-left:auto;background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{flex-shrink:0;margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto 0}.swal2-validation-message{align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:.25em solid transparent;border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{background-color:transparent!important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}</style>
+  <!-- <script src="/bootstrap5/bootstrap.bundle.min.js"></script> -->
+
+<style type="text/css">.jp-card.jp-card-safari.jp-card-identified .jp-card-front:before, .jp-card.jp-card-safari.jp-card-identified .jp-card-back:before {   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); }  .jp-card.jp-card-ie-10.jp-card-flipped, .jp-card.jp-card-ie-11.jp-card-flipped {   -webkit-transform: 0deg;   -moz-transform: 0deg;   -ms-transform: 0deg;   -o-transform: 0deg;   transform: 0deg; }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-front, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-front {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back:after {       left: 18%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-cvc, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-cvc {       -webkit-transform: rotateY(180deg);       -moz-transform: rotateY(180deg);       -ms-transform: rotateY(180deg);       -o-transform: rotateY(180deg);       transform: rotateY(180deg);       left: 5%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny {       left: 84%; }       .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny:after {         left: -480%;         -webkit-transform: rotateY(180deg);         -moz-transform: rotateY(180deg);         -ms-transform: rotateY(180deg);         -o-transform: rotateY(180deg);         transform: rotateY(180deg); }  .jp-card.jp-card-ie-10.jp-card-amex .jp-card-back, .jp-card.jp-card-ie-11.jp-card-amex .jp-card-back {   display: none; }  .jp-card-logo {   height: 36px;   width: 60px;   font-style: italic; }   .jp-card-logo, .jp-card-logo:before, .jp-card-logo:after {     box-sizing: border-box; }  .jp-card-logo.jp-card-amex {   text-transform: uppercase;   font-size: 4px;   font-weight: bold;   color: white;   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   border: 1px solid #EEE; }   .jp-card-logo.jp-card-amex:before, .jp-card-logo.jp-card-amex:after {     width: 28px;     display: block;     position: absolute;     left: 16px; }   .jp-card-logo.jp-card-amex:before {     height: 28px;     content: "american";     top: 3px;     text-align: left;     padding-left: 2px;     padding-top: 11px;     background: #267AC3; }   .jp-card-logo.jp-card-amex:after {     content: "express";     bottom: 11px;     text-align: right;     padding-right: 2px; }  .jp-card.jp-card-amex.jp-card-flipped {   -webkit-transform: none;   -moz-transform: none;   -ms-transform: none;   -o-transform: none;   transform: none; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:before, .jp-card.jp-card-amex.jp-card-identified .jp-card-back:before {   background-color: #108168; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-logo.jp-card-amex {   opacity: 1; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-cvc {   visibility: visible; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:after {   opacity: 1; }  .jp-card-logo.jp-card-discover {   background: #FF6600;   color: #111;   text-transform: uppercase;   font-style: normal;   font-weight: bold;   font-size: 10px;   text-align: center;   overflow: hidden;   z-index: 1;   padding-top: 9px;   letter-spacing: .03em;   border: 1px solid #EEE; }   .jp-card-logo.jp-card-discover:before, .jp-card-logo.jp-card-discover:after {     content: " ";     display: block;     position: absolute; }   .jp-card-logo.jp-card-discover:before {     background: white;     width: 200px;     height: 200px;     border-radius: 200px;     bottom: -5%;     right: -80%;     z-index: -1; }   .jp-card-logo.jp-card-discover:after {     width: 8px;     height: 8px;     border-radius: 4px;     top: 10px;     left: 27px;     background-color: #FF6600;     background-image: -webkit-radial-gradient(#FF6600, #fff);     background-image: radial-gradient(  #FF6600, #fff);     content: "network";     font-size: 4px;     line-height: 24px;     text-indent: -7px; }  .jp-card .jp-card-front .jp-card-logo.jp-card-discover {   right: 12%;   top: 18%; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:before, .jp-card.jp-card-discover.jp-card-identified .jp-card-back:before {   background-color: #86B8CF; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-logo.jp-card-discover {   opacity: 1; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:after {   -webkit-transition: 400ms;   -moz-transition: 400ms;   transition: 400ms;   content: " ";   display: block;   background-color: #FF6600;   background-image: -webkit-linear-gradient(#FF6600, #ffa366, #FF6600);   background-image: linear-gradient(#FF6600, #ffa366, #FF6600);   height: 50px;   width: 50px;   border-radius: 25px;   position: absolute;   left: 100%;   top: 15%;   margin-left: -25px;   box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.5); }  .jp-card-logo.jp-card-visa {   background: white;   text-transform: uppercase;   color: #1A1876;   text-align: center;   font-weight: bold;   font-size: 15px;   line-height: 18px; }   .jp-card-logo.jp-card-visa:before, .jp-card-logo.jp-card-visa:after {     content: " ";     display: block;     width: 100%;     height: 25%; }   .jp-card-logo.jp-card-visa:before {     background: #1A1876; }   .jp-card-logo.jp-card-visa:after {     background: #E79800; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-front:before, .jp-card.jp-card-visa.jp-card-identified .jp-card-back:before {   background-color: #191278; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-logo.jp-card-visa {   opacity: 1; }  .jp-card-logo.jp-card-mastercard {   color: white;   font-weight: bold;   text-align: center;   font-size: 9px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-mastercard:before, .jp-card-logo.jp-card-mastercard:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-mastercard:before {     left: 0;     background: #FF0000;     z-index: -1; }   .jp-card-logo.jp-card-mastercard:after {     right: 0;     background: #FFAB00;     z-index: -2; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front .jp-card-logo.jp-card-mastercard, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back .jp-card-logo.jp-card-mastercard {   box-shadow: none; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front:before, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back:before {   background-color: #0061A8; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-logo.jp-card-mastercard {   opacity: 1; }  .jp-card-logo.jp-card-maestro {   color: white;   font-weight: bold;   text-align: center;   font-size: 14px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-maestro:before, .jp-card-logo.jp-card-maestro:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-maestro:before {     left: 0;     background: #0064CB;     z-index: -1; }   .jp-card-logo.jp-card-maestro:after {     right: 0;     background: #CC0000;     z-index: -2; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front .jp-card-logo.jp-card-maestro, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back .jp-card-logo.jp-card-maestro {   box-shadow: none; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front:before, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back:before {   background-color: #0B2C5F; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-logo.jp-card-maestro {   opacity: 1; }  .jp-card-logo.jp-card-dankort {   width: 60px;   height: 36px;   padding: 3px;   border-radius: 8px;   border: #000000 1px solid;   background-color: #FFFFFF; }   .jp-card-logo.jp-card-dankort .dk {     position: relative;     width: 100%;     height: 100%;     overflow: hidden; }     .jp-card-logo.jp-card-dankort .dk:before {       background-color: #ED1C24;       content: '';       position: absolute;       width: 100%;       height: 100%;       display: block;       border-radius: 6px; }     .jp-card-logo.jp-card-dankort .dk:after {       content: '';       position: absolute;       top: 50%;       margin-top: -7.7px;       right: 0;       width: 0;       height: 0;       border-style: solid;       border-width: 7px 7px 10px 0;       border-color: transparent #ED1C24 transparent transparent;       z-index: 1; }   .jp-card-logo.jp-card-dankort .d, .jp-card-logo.jp-card-dankort .k {     position: absolute;     top: 50%;     width: 50%;     display: block;     height: 15.4px;     margin-top: -7.7px;     background: white; }   .jp-card-logo.jp-card-dankort .d {     left: 0;     border-radius: 0 8px 10px 0; }     .jp-card-logo.jp-card-dankort .d:before {       content: '';       position: absolute;       top: 50%;       left: 50%;       display: block;       background: #ED1C24;       border-radius: 2px 4px 6px 0px;       height: 5px;       width: 7px;       margin: -3px 0 0 -4px; }   .jp-card-logo.jp-card-dankort .k {     right: 0; }     .jp-card-logo.jp-card-dankort .k:before, .jp-card-logo.jp-card-dankort .k:after {       content: '';       position: absolute;       right: 50%;       width: 0;       height: 0;       border-style: solid;       margin-right: -1px; }     .jp-card-logo.jp-card-dankort .k:before {       top: 0;       border-width: 8px 5px 0 0;       border-color: #ED1C24 transparent transparent transparent; }     .jp-card-logo.jp-card-dankort .k:after {       bottom: 0;       border-width: 0 5px 8px 0;       border-color: transparent transparent #ED1C24 transparent; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-front:before, .jp-card.jp-card-dankort.jp-card-identified .jp-card-back:before {   background-color: #0055C7; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-logo.jp-card-dankort {   opacity: 1; }  .jp-card-logo.jp-card-elo {   height: 50px;   width: 50px;   border-radius: 100%;   background: black;   color: white;   text-align: center;   text-transform: lowercase;   font-size: 21px;   font-style: normal;   letter-spacing: 1px;   font-weight: bold;   padding-top: 13px; }   .jp-card-logo.jp-card-elo .e, .jp-card-logo.jp-card-elo .l, .jp-card-logo.jp-card-elo .o {     display: inline-block;     position: relative; }   .jp-card-logo.jp-card-elo .e {     -webkit-transform: rotate(-15deg);     -moz-transform: rotate(-15deg);     -ms-transform: rotate(-15deg);     -o-transform: rotate(-15deg);     transform: rotate(-15deg); }   .jp-card-logo.jp-card-elo .o {     position: relative;     display: inline-block;     width: 12px;     height: 12px;     right: 0;     top: 7px;     border-radius: 100%;     background-image: -webkit-linear-gradient( yellow 50%, red 50%);     background-image: linear-gradient( yellow 50%, red 50%);     -webkit-transform: rotate(40deg);     -moz-transform: rotate(40deg);     -ms-transform: rotate(40deg);     -o-transform: rotate(40deg);     transform: rotate(40deg);     text-indent: -9999px; }     .jp-card-logo.jp-card-elo .o:before {       content: "";       position: absolute;       width: 49%;       height: 49%;       background: black;       border-radius: 100%;       text-indent: -99999px;       top: 25%;       left: 25%; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-front:before, .jp-card.jp-card-elo.jp-card-identified .jp-card-back:before {   background-color: #6F6969; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-logo.jp-card-elo {   opacity: 1; }  .jp-card-container {   -webkit-perspective: 1000px;   -moz-perspective: 1000px;   perspective: 1000px;   width: 350px;   max-width: 100%;   height: 200px;   margin: auto;   z-index: 1;   position: relative; }  .jp-card {   font-family: "Helvetica Neue";   line-height: 1;   position: relative;   width: 100%;   height: 100%;   min-width: 315px;   border-radius: 10px;   -webkit-transform-style: preserve-3d;   -moz-transform-style: preserve-3d;   -ms-transform-style: preserve-3d;   -o-transform-style: preserve-3d;   transform-style: preserve-3d;   -webkit-transition: all 400ms linear;   -moz-transition: all 400ms linear;   transition: all 400ms linear; }   .jp-card > *, .jp-card > *:before, .jp-card > *:after {     -moz-box-sizing: border-box;     -webkit-box-sizing: border-box;     box-sizing: border-box;     font-family: inherit; }   .jp-card.jp-card-flipped {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }   .jp-card .jp-card-front, .jp-card .jp-card-back {     -webkit-backface-visibility: hidden;     backface-visibility: hidden;     -webkit-transform-style: preserve-3d;     -moz-transform-style: preserve-3d;     -ms-transform-style: preserve-3d;     -o-transform-style: preserve-3d;     transform-style: preserve-3d;     -webkit-transition: all 400ms linear;     -moz-transition: all 400ms linear;     transition: all 400ms linear;     width: 100%;     height: 100%;     position: absolute;     top: 0;     left: 0;     overflow: hidden;     border-radius: 10px;     background: #DDD; }     .jp-card .jp-card-front:before, .jp-card .jp-card-back:before {       content: " ";       display: block;       position: absolute;       width: 100%;       height: 100%;       top: 0;       left: 0;       opacity: 0;       border-radius: 10px;       -webkit-transition: all 400ms ease;       -moz-transition: all 400ms ease;       transition: all 400ms ease; }     .jp-card .jp-card-front:after, .jp-card .jp-card-back:after {       content: " ";       display: block; }     .jp-card .jp-card-front .jp-card-display, .jp-card .jp-card-back .jp-card-display {       color: white;       font-weight: normal;       opacity: 0.5;       -webkit-transition: opacity 400ms linear;       -moz-transition: opacity 400ms linear;       transition: opacity 400ms linear; }       .jp-card .jp-card-front .jp-card-display.jp-card-focused, .jp-card .jp-card-back .jp-card-display.jp-card-focused {         opacity: 1;         font-weight: 700; }     .jp-card .jp-card-front .jp-card-cvc, .jp-card .jp-card-back .jp-card-cvc {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 14px; }     .jp-card .jp-card-front .jp-card-shiny, .jp-card .jp-card-back .jp-card-shiny {       width: 50px;       height: 35px;       border-radius: 5px;       background: #CCC;       position: relative; }       .jp-card .jp-card-front .jp-card-shiny:before, .jp-card .jp-card-back .jp-card-shiny:before {         content: " ";         display: block;         width: 70%;         height: 60%;         border-top-right-radius: 5px;         border-bottom-right-radius: 5px;         background: #d9d9d9;         position: absolute;         top: 20%; }   .jp-card .jp-card-front .jp-card-logo {     position: absolute;     opacity: 0;     right: 5%;     top: 8%;     -webkit-transition: 400ms;     -moz-transition: 400ms;     transition: 400ms; }   .jp-card .jp-card-front .jp-card-lower {     width: 80%;     position: absolute;     left: 10%;     bottom: 30px; }     @media only screen and (max-width: 480px) {       .jp-card .jp-card-front .jp-card-lower {         width: 90%;         left: 5%; } }     .jp-card .jp-card-front .jp-card-lower .jp-card-cvc {       visibility: hidden;       float: right;       position: relative;       bottom: 5px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-number {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 24px;       clear: both;       margin-bottom: 30px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-expiry {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       letter-spacing: 0em;       position: relative;       float: right;       width: 25%; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before, .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         font-family: "Helvetica Neue";         font-weight: bold;         font-size: 7px;         white-space: pre;         display: block;         opacity: .5; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before {         content: attr(data-before);         margin-bottom: 2px;         font-size: 7px;         text-transform: uppercase; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         position: absolute;         content: attr(data-after);         text-align: right;         right: 100%;         margin-right: 5px;         margin-top: 2px;         bottom: 0; }     .jp-card .jp-card-front .jp-card-lower .jp-card-name {       text-transform: uppercase;       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 20px;       max-height: 45px;       position: absolute;       bottom: 0;       width: 190px;       display: -webkit-box;       -webkit-line-clamp: 2;       -webkit-box-orient: horizontal;       overflow: hidden;       text-overflow: ellipsis; }   .jp-card .jp-card-back {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }     .jp-card .jp-card-back .jp-card-bar {       background-color: #444;       background-image: -webkit-linear-gradient(#444, #333);       background-image: linear-gradient(#444, #333);       width: 100%;       height: 20%;       position: absolute;       top: 10%; }     .jp-card .jp-card-back:after {       content: " ";       display: block;       background-color: #FFF;       background-image: -webkit-linear-gradient(#FFF, #FFF);       background-image: linear-gradient(#FFF, #FFF);       width: 80%;       height: 16%;       position: absolute;       top: 40%;       left: 2%; }     .jp-card .jp-card-back .jp-card-cvc {       position: absolute;       top: 40%;       left: 85%;       -webkit-transition-delay: 600ms;       -moz-transition-delay: 600ms;       transition-delay: 600ms; }     .jp-card .jp-card-back .jp-card-shiny {       position: absolute;       top: 66%;       left: 2%; }       .jp-card .jp-card-back .jp-card-shiny:after {         content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free.AIt comes with no warranty.A For support issues, please visit: github.com/jessepollak/card.";         position: absolute;         left: 120%;         top: 5%;         color: white;         font-size: 7px;         width: 230px;         opacity: .5; }   .jp-card.jp-card-identified {     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }     .jp-card.jp-card-identified .jp-card-front, .jp-card.jp-card-identified .jp-card-back {       background-color: #000;       background-color: rgba(0, 0, 0, 0.5); }       .jp-card.jp-card-identified .jp-card-front:before, .jp-card.jp-card-identified .jp-card-back:before {         -webkit-transition: all 400ms ease;         -moz-transition: all 400ms ease;         transition: all 400ms ease;         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         opacity: 1; }       .jp-card.jp-card-identified .jp-card-front .jp-card-logo, .jp-card.jp-card-identified .jp-card-back .jp-card-logo {         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); }     .jp-card.jp-card-identified.no-radial-gradient .jp-card-front:before, .jp-card.jp-card-identified.no-radial-gradient .jp-card-back:before {       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); } </style><script type="text/javascript" src="./Receita WS - Webservice de Dados de CNPJ_files/sdk"></script></head>
+<body class="dimmable dimmed scrolling" style="padding-right: 0px; height: 2627px;">
+
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.4.2.3%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22payment%22%3A%7B%22test_mode%22%3Afalse%2C%22account_id%22%3A%222B3BCB320EA54159B81AFF9C78A22297%22%2C%22vindi_public_key%22%3A%22eU91VmxEZG5PZUpjVGdXVUtjWWR1QjFWVnMyU3lrNVhNUGw1UFFuQXVvODo%3D%22%2C%22vindi_public_url%22%3A%22https%3A%2F%2Fapp.vindi.com.br%2Fapi%2Fv1%2F%22%7D%2C%22reCAPTCHA%22%3A%7B%22token%22%3A%226LdIHB4TAAAAAJBF2uKtr-GWbBWY9WeDqH0bhVPI%22%7D%2C%22analyticsSettings%22%3A%7B%22Google%20Analytics%22%3A%7B%22trackingId%22%3A%22UA-1789522-13%22%7D%7D%7D%2C%22ROOT_URL%22%3A%22https%3A%2F%2Freceitaws.com.br%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22appId%22%3A%22ahkbvruedaxddzti08%22%2C%22accountsConfigCalled%22%3Atrue%2C%22autoupdateVersion%22%3A%226a66d6fb3efa8ff4eaff6fae5b2636141b6cb155%22%2C%22autoupdateVersionRefreshable%22%3A%228b5517fcb3e2239e2dc0cffcab65503de9e2df59%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="./Receita WS - Webservice de Dados de CNPJ_files/0c45f1789668533b23175df4e62867674e575a2f.js.download"></script>
+
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  <div class="bert-alert clearfix">
+    <div class="bert-container">
+      <div class="bert-gem">
+        <i class="fa"></i>
+      </div>
+      <div class="bert-content">
+        
+        <p></p>
+      </div>
+    </div>
+  </div><!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS89XLF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Chatra -->
+<!-- <script>
+    ChatraID = 'HDCKSaXjZJg4RvuyE';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script> -->
+<!-- /Chatra -->
+
+
+<!-- Register modal -->
+<div class="ui small modal bg-green-gradient h-auto" id="signupmodal">
+  <i class="close icon fa fa-times top-0 end-0"></i>
+
+  <div class="text-center bg-transparent pt-5 mb-5">
+    <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo.png" width="250px" alt="Receita Logo">
+    <h4 class="fw-bold my-4">Criar uma conta</h4>
+  </div>
+
+  <div class="ui middle center aligned grid">
+    <div class="left aligned column">
+      <form class="ui large form">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="email" name="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="password" name="newpassword" placeholder="Senha (pelo menos 6 caracteres)">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="password" name="passwordconfirmation" placeholder="Confirmação da Senha">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input name="terms" type="checkbox" tabindex="0" class="hidden">
+            <label>Eu concordo com os <a href="https://www.receitaws.com.br/terms.pdf" target="blank">termos de uso</a></label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="g-recaptcha" data-sitekey="6LdIHB4TAAAAAJBF2uKtr-GWbBWY9WeDqH0bhVPI"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Receita WS - Webservice de Dados de CNPJ_files/anchor.html" width="304" height="78" role="presentation" name="a-twys4pit0o0m" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Receita WS - Webservice de Dados de CNPJ_files/saved_resource.html"></iframe></div>
+        </div>
+        <div class="ui error message"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="actions bg-transparent text-center border-0 mb-5">
+    <button class="btn btn-white approve rounded-pill px-5">Registrar</button>
+    <button class="btn btn-link deny fw-bold ms-4">Cancelar</button>
+  </div>
+</div>
+
+
+<!-- Login modal -->
+<div class="ui small modal h-auto bg-green-gradient" id="signinmodal">
+  <i class="close icon fa fa-times top-0 end-0"></i>
+
+  <div class="text-center bg-transparent pt-5 mb-5">
+    <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo.png" width="250px" alt="Receita Logo">
+    <h4 class="fw-bold my-4">Entrar</h4>
+  </div>
+
+  <div class="ui middle center aligned grid">
+    <div class="left aligned column">
+      <form class="ui large form">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="email" name="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="password" name="password" placeholder="Senha">
+          </div>
+        </div>
+        <div class="ui error message"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="actions bg-transparent text-center border-0 mb-5">
+    <button class="btn btn-white rounded-pill approve px-5">Entrar</button>
+    <button class="btn btn-link rounded-pill forgot px-5 fw-bold">Esqueceu sua senha?</button>
+  </div>
+</div>
+
+<!-- Forgot password modal -->
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <nav id="menu-navbar" class="navbar navbar-expand-lg navbar-light w-100 py-4 z-index-1000 position-absolute bg-transparent">
+    <div class="container-md">
+      <a class="receita-logo navbar-brand me-5" href="https://www.receitaws.com.br/">
+        <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo.png" width="150px" alt="Receita Logo">
+      </a>
+
+      <button class="navbar-toggler open-menu" type="button" data-menu-id="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="text-end d-block d-lg-none">
+          <button class="close-menu btn btn-link" type="button" data-menu-id="#navbarSupportedContent">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 close-menu border-0" data-menu-id="#navbarSupportedContent">
+          <li class="nav-item mx-5 py-3 py-lg-0">
+            <a class="nav-link fw-bold text-black" href="https://www.receitaws.com.br/api">API</a>
+          </li>
+          <li class="nav-item mx-5 py-3 py-lg-0">
+            <a class="nav-link fw-bold text-black" href="https://www.receitaws.com.br/#section-plans">Planos</a>
+          </li>
+          <li class="nav-item mx-5 py-3 py-lg-0 flex-fill">
+            <a class="nav-link fw-bold text-black" href="https://www.receitaws.com.br/faq">Ajuda</a>
+          </li>
+        </ul>
+
+        <div class="mx-5 py-4 py-lg-0">
+          
+            <div class="dropdown">
+              <button class="btn btn-white rounded-pill py-1 px-4 dropdown-toggle" type="button" id="dropdown-account" data-bs-toggle="dropdown" aria-expanded="false">
+                Minha conta
+              </button>
+              <ul class="dropdown-menu close-menu" data-menu-id="#navbarSupportedContent" aria-labelledby="dropdown-account">
+                <li>
+                  <a class="dropdown-item" href="https://www.receitaws.com.br/account/cnpj"><i class="search icon"></i> Buscar CNPJ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.receitaws.com.br/account/api"><i class="globe icon"></i> API</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.receitaws.com.br/account/billing"><i class="dollar icon"></i> Limites e Faturas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.receitaws.com.br/account/preferences"><i class="settings icon"></i> Configurações</a>
+                </li>
+                <div class="item">
+                  <button class="dropdown-item logout btn-link w-100">
+                    <i class="fa fa-power-off me-2"></i>
+                    Sair
+                  </button>
+                </div>
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+    
+    
+    
+    
+
+  <div class="bg-green bg-green-gradient min-vh-100 pt-5">
+    <div class="container-md py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1 mt-5">
+          <h1 class="text-white display-1 fw-bold">50,552,395</h1>
+          <h1 class="display-5 fw-bold">CNPJs atualizados</h1>
+
+          <div class="input-search search cnpj mt-4">
+            <input class="form-control input-search__input fw-bold search" type="text" placeholder="Pesquise aqui o CNPJ desejado">
+            <button class="btn btn-white input-search__btn">
+              <i class="fa fa-search fa-lg search" aria-hidden=""></i>
+            </button>
+          </div>
+
+          <div class="ui large commercial form d-none">
+            <div>
+              <div class="border border-green-dark px-3 py-2 rounded" style="background: rgba(0, 0, 0, 0.08);">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <div class="d-flex align-items-center">
+                      <div class="field mb-0 me-4">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="commercial" value="public" checked="" tabindex="0" class="hidden">
+                          <label class="big text-nowrap">API Pública</label>
+                        </div>
+                      </div>
+
+                      <div class="disabled field mb-0 me-3">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="commercial" value="commercial" tabindex="0" class="hidden">
+                          <label class="big text-nowrap">API Comercial</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5">
+                    <div class="days">
+                      <label class="small">Defasagem Máxima (dias)</label>
+                      <div class="d-flex align-items-center">
+                        <input class="flex-fill py-2 px-2" style="max-width: 100px;" type="number" name="days" min="0" max="1000" placeholder="10">
+                        <button class="icon refresh btn btn-white px-2 py-0 ms-3 mt-1 d-none">
+                          Atualizar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="mt-5 lh-lg">Consulte dados fiéis das empresas que se relacionam com você e mantenha seu sistema sempre atualizado.</h6>
+
+          <div class="d-flex mt-5">
+            <a class="btn btn-orange px-md-5 me-4" href="https://www.receitaws.com.br/#section-api">Teste nossa API</a>
+            <a class="btn btn-white px-md-5" href="https://www.receitaws.com.br/#section-plans">Ver planos</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 order-1 order-md-2 text-end mt-5">
+          <div class="row">
+            <div class="col-md-10 offset-md-2">
+              <div class="animation-header">
+                <img class="animation-header__shield" src="./Receita WS - Webservice de Dados de CNPJ_files/shield.png" alt="Shield">
+                <img class="animation-header__cogs" src="./Receita WS - Webservice de Dados de CNPJ_files/cogs.png" alt="Cogs">
+                <img class="animation-header__sheets" src="./Receita WS - Webservice de Dados de CNPJ_files/sheets.png" alt="Sheets">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5  pt-5 align-items-center border-top border-white">
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_1.svg" alt="Case 1">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_2.svg" alt="Case 2">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_3.svg" alt="Case 3">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_4.svg" alt="Case 4">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_5.svg" alt="Case 5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_6.svg" alt="Case 6">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_7.svg" alt="Case 7">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_8.svg" alt="Case 8">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_9.svg" alt="Case 9">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_10.svg" alt="Case 10">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_11.svg" alt="Case 11">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-2 text-center py-3">
+          <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/case_12.svg" alt="Case 12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section-api" class="bg-black py-5">
+    <div class="container-md py-4">
+      <h1 class="text-primary w-75 fw-bold pb-5">
+        <p class="mb-0">Somos uma API ágil para consulta</p>
+        <p class="mb-0">às informações de empresas através</p>
+        <p class="mb-0">de seus CNPJs</p>
+      </h1>
+
+      <div class="row mt-5">
+        <div class="col-md-4 text-white my-4">
+          <div class="w-75 animated animated-scale-up show">
+            <img src="./Receita WS - Webservice de Dados de CNPJ_files/gray-user-check.svg" alt="User check">
+
+            <h3 class="fw-bold mt-5">Conheça seus clientes</h3>
+            <h6 class="mt-3 lh-lg text-gray-400">Consulte dados para ter uma imagem <span class="fw-bold">realista e atualizada</span> sobre seus parceiros de negócios.</h6>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white my-4">
+          <div class="w-75 animated animated-scale-up show">
+            <img src="./Receita WS - Webservice de Dados de CNPJ_files/currency-line.svg" alt="Currency">
+
+            <h3 class="fw-bold mt-5">Aumente a segurança das suas negociações</h3>
+            <h6 class="mt-3 lh-lg text-gray-400">Com o acesso a dados atualizados e confiáveis, você  <span class="fw-bold">aumenta a segurança e o sucesso em suas negociações.</span></h6>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white my-4">
+          <div class="w-75 animated animated-scale-up show">
+            <img src="./Receita WS - Webservice de Dados de CNPJ_files/eye-line.svg" alt="Eye line">
+
+            <h3 class="fw-bold mt-5">Reduza o risco de calotes</h3>
+            <h6 class="mt-3 lh-lg text-gray-400">Ao negociar apenas com clientes/parceiros adimplentes, você <span class="fw-bold">diminui os gastos com recuperação de crédito e reduz o risco de que os calotes prejudiquem seus lucros.</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section-api" class="bg-black py-5">
+    <div class="container-md py-4">
+      <div class="bg-primary bg-gradient rounded">
+        <div class="p-4 plane-shadow">
+          <div class="row align-items-center">
+            <div class="col-md-6 position-relative">
+              <img class="w-100" src="./Receita WS - Webservice de Dados de CNPJ_files/small-planes.png" alt="Small Planes">
+              <img class="w-100 plane animated animated-offset" src="./Receita WS - Webservice de Dados de CNPJ_files/plane.png" alt="Plane">
+            </div>
+
+            <div class="col-md-4">
+              <h1 class="display-1 fw-bold">API</h1>
+              <h6 class="lh-lg mt-5">Para entender com mais detalhes as diferenças entre estes modos de uso, é recomendada a leitura da página de ajuda e conheça nossos planos.</h6>
+
+              <a class="btn btn-white px-5 mt-5" href="https://www.receitaws.com.br/api">Veja a documentação e os usos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-200 p-5 rounded-bottom">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-end">
+              <h1 class="text-primary fw-bold">Para o que você pode usar?</h1>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="d-flex py-3 animated animated-to-left">
+                  <img class="me-3" src="./Receita WS - Webservice de Dados de CNPJ_files/currency-dark.svg" alt="Currency">
+                  <h6 class="mb-0 lh-lg ms-4 fw-bold"><span class="text-gray-600">Permitir o</span> preenchimento automático de seus formulários de cadastros.</h6>
+                </li>
+
+                <li class="d-flex py-3 animated animated-to-left">
+                  <img class="me-3" src="./Receita WS - Webservice de Dados de CNPJ_files/user-check-dark.svg" alt="User check dark">
+                  <h6 class="mb-0 lh-lg ms-4 fw-bold">Enriquecer <span class="text-gray-600">sua base de clientes</span></h6>
+                </li>
+
+                <li class="d-flex py-3 animated animated-to-left">
+                  <img class="me-3" src="./Receita WS - Webservice de Dados de CNPJ_files/eye-line-dark.svg" alt="Eye line dark">
+                  <h6 class="mb-0 lh-lg ms-4 fw-bold">Validações de CNPJs <span class="text-gray-600">no seu canal de vendas online - por exemplo, um chat que já deixa automática a validação de CNPJs.</span></h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section-plans" class="bg-black py-5">
+    <div class="container-md py-4">
+      <h1 class="display-3 fw-bold text-white mb-4">Planos</h1>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <h5 class="text-gray-600">Escolha seu plano.</h5>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-lg my-3">
+          <h2 class="fw-bold text-gray-600 text-center py-4">Grátis</h2>
+          <div class="bg-white rounded">
+            <div class="bg-gray-200 rounded p-2">
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">3</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas por minuto</h6>
+                  Utiliza nossa base super atualizada
+                </div>
+              </div>
+
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">130.000</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Limite de consultas</h6>
+                  Valor total/mês.
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h3 class="fw-bold text-black mb-4">0</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas receita</h6>
+                  Consulta em tempo real na receita.
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded p-3">
+              <div class="d-flex align-items-end justify-content-center">
+                <h6 class="fw-bold mb-3">R$</h6>
+                <h1 class="fw-bold display-3 mb-0 mx-1">0</h1>
+                <h6 class="fw-bold text-gray-600 mb-3">/mês</h6>
+              </div>
+
+              <button class="btn btn-green w-100 py-2 w-100 mt-3 invisible">Contrate já!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg my-3">
+          <h2 class="fw-bold text-gray-600 text-center py-4">Bronze</h2>
+          <div class="bg-white rounded">
+            <div class="bg-gray-200 rounded p-2">
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">10</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas por minuto</h6>
+                  Utiliza nossa base super atualizada
+                </div>
+              </div>
+
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">150.000</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Limite de consultas</h6>
+                  Valor total/mês.
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h3 class="fw-bold text-black mb-4">0</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas receita</h6>
+                  Consulta em tempo real na receita.
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded p-3">
+              <div class="d-flex align-items-end justify-content-center">
+                <h6 class="fw-bold mb-3">R$</h6>
+                <h1 class="fw-bold display-3 mb-0 mx-1">99</h1>
+                <h6 class="fw-bold text-gray-600 mb-3">/mês</h6>
+              </div>
+
+              
+                <button class="btn btn-green w-100 py-2 mt-3 subscription" data-plan="Bronze">Contrate já!</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg my-3">
+          <h2 class="fw-bold text-gray-600 text-center py-4">Prata</h2>
+          <div class="bg-white rounded">
+            <div class="bg-gray-200 rounded p-2">
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">20</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas por minuto</h6>
+                  Utiliza nossa base super atualizada
+                </div>
+              </div>
+
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">300.000</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Limite de consultas</h6>
+                  Valor total/mês.
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h3 class="fw-bold text-black mb-4">15.000</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas receita</h6>
+                  Consulta em tempo real na receita.
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded p-3">
+              <div class="d-flex align-items-end justify-content-center">
+                <h6 class="fw-bold mb-3">R$</h6>
+                <h1 class="fw-bold display-3 mb-0 mx-1">149</h1>
+                <h6 class="fw-bold text-gray-600 mb-3">/mês</h6>
+              </div>
+
+              
+                <button class="btn btn-green w-100 py-2 mt-3 subscription" data-plan="Prata">Contrate já!</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg my-3">
+          <div class="bg-green-gradient rounded shadow-green animated visible animated-scale-pulse">
+            <h2 class="fw-bold text-center py-4">Ouro</h2>
+
+            <div class="rounded">
+              <div class="bg-white rounded p-2 border border-green">
+                <div class="border-bottom border-gray-400 p-3">
+                  <h3 class="fw-bold text-black mb-4">Ilimitadas</h3>
+                  <div class="text-gray-600 mb-0">
+                    <h6 class="fw-bold">Consultas por minuto</h6>
+                    Utiliza nossa base super atualizada
+                  </div>
+                </div>
+
+                <div class="border-bottom border-gray-400 p-3">
+                  <h3 class="fw-bold text-black mb-4">600.000</h3>
+                  <div class="text-gray-600 mb-0">
+                    <h6 class="fw-bold">Limite de consultas</h6>
+                    Valor total/mês.
+                  </div>
+                </div>
+
+                <div class="p-3">
+                  <h3 class="fw-bold text-black mb-4">30.000</h3>
+                  <div class="text-gray-600 mb-0">
+                    <h6 class="fw-bold">Consultas receita</h6>
+                    Consulta em tempo real na receita.
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded p-3">
+                <div class="d-flex align-items-end justify-content-center text-white">
+                  <h6 class="fw-bold mb-3">R$</h6>
+                  <h1 class="fw-bold display-3 mb-0 mx-1">249</h1>
+                  <h6 class="fw-bold mb-3">/mês</h6>
+                </div>
+
+                
+                  <button class="btn btn-orange w-100 py-2 mt-3 subscription" data-plan="Ouro">Contrate já!</button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-200 rounded-bottom p-3 mx-4 d-flex align-items-center">
+            <img src="./Receita WS - Webservice de Dados de CNPJ_files/crown.svg" alt="Crown">
+            <h6 class="ms-3 text-gray-600 fw-bold mb-0">Mais escolhido</h6>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg my-3">
+          <h2 class="fw-bold text-gray-600 text-center py-4">Diamante</h2>
+          <div class="bg-white rounded">
+            <div class="bg-gray-200 rounded p-2">
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">Ilimitadas</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas por minuto</h6>
+                  Utiliza nossa base super atualizada
+                </div>
+              </div>
+
+              <div class="border-bottom border-gray-400 p-3">
+                <h3 class="fw-bold text-black mb-4">1.200.000+</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Limite de consultas</h6>
+                  Valor total/mês.
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h3 class="fw-bold text-black mb-4">600.000+</h3>
+                <div class="text-gray-600 mb-0">
+                  <h6 class="fw-bold">Consultas receita</h6>
+                  Consulta em tempo real na receita.
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded p-3">
+              <h4 class="fw-bold text-orange py-3 mb-3 text-center">Plano sob medida</h4>
+              <button class="btn btn-green w-100 py-2 w-100 mt-3 invisible">Contrate já!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="bg-black">
+    <div class="container-md py-5">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="receita-logo navbar-brand me-5 flex-fill" href="https://www.receitaws.com.br/">
+            <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo-white.png" width="200px" alt="Receita Logo">
+          </a>
+        </div>
+
+        <div class="col-md-8">
+          <ul class="d-md-flex mb-0 p-0">
+            <li class="nav-item mx-md-3 mx-lg-5">
+              <a class="nav-link fw-bold text-white" href="https://www.receitaws.com.br/api">API</a>
+            </li>
+            <li class="nav-item mx-md-3 mx-lg-5">
+              <a class="nav-link fw-bold text-white" href="https://www.receitaws.com.br/#section-plans">Planos</a>
+            </li>
+            <li class="nav-item mx-md-3 mx-lg-5">
+              <a class="nav-link fw-bold text-white" href="https://www.receitaws.com.br/faq">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'pt-BR'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript';
+po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(po, s);
+  })();
+</script><div class="ui dimmer modals page transition visible active" style="display: block !important;"><div class="ui small modal h-auto bg-green-gradient" id="forgotmodal">
+  <i class="close icon fa fa-times top-0 end-0"></i>
+
+  <div class="text-center bg-transparent pt-5 mb-5">
+    <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo.png" width="250px" alt="Receita Logo">
+    <h4 class="fw-bold my-4">Recuperar senha</h4>
+  </div>
+
+  <div class="ui middle center aligned grid">
+    <div class="left aligned column">
+      <form class="ui large form">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input class="bg-white-opacity-4 border-0 py-3 px-4" type="email" name="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="ui error message"></div>
+        <div class="ui success message"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="actions bg-transparent border-0 text-center pb-5">
+    <div class="btn btn-white approve button px-5 rounded-pill">Recuperar Senha</div>
+  </div>
+</div><div class="ui small modal h-auto mt-5 mx-auto position-static scrolling transition visible active" id="company-data-modal" style="top: 0px; display: block !important;">
+    <i class="close icon fa fa-times text-black top-0 end-0"></i>
+
+    <div class="text-center bg-transparent pt-5 mb-5">
+      <img src="./Receita WS - Webservice de Dados de CNPJ_files/logo.png" width="250px" alt="Receita Logo">
+      <h4 class="fw-bold my-4">Dados da empresa</h4>
+    </div>
+
+    <div class="px-5 pb-5">
+      <div class="ui hidden negative homequery message" style="">
+    <div class="header">
+      A consulta retornou o erro abaixo:
+    </div>
+    <p></p>
+  </div>
+
+  <div class="ui data container-md">
+
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Última Atualização</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09 de Novembro de 2021 às 15:43:23 - 5 dias atrás</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
+    <!-- {{#if redirectPublic company}}
+    <a href="{{publicURL company}}" target="_blank">
+      <div class="big ui left labeled button" tabindex="0" style="margin-top: 30px;">
+        <a class="ui basic label" style="color: #D32F2F;">
+          Interessado nas informações completas do CNPJ? Veja no ConsultaCNPJ!
+        </a>
+        <div class="ui icon button">
+          <i class="external link alternate icon"></i>
+        </div>
+      </div>
+    </a>
+    {{else}} -->
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th class="ten wide">Número de Inscrição</th>
+          <th class="six wide">Data de Abertura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>00.360.305/0001-04 - MATRIZ</td>
+          <td>03/02/1971 - 51 anos atrás</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Nome Empresarial</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CAIXA ECONOMICA FEDERAL</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Nome Fantasia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CEF MATRIZ</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th colspan="2">Atividade Econômica Primária</th>
+        </tr>
+        <tr>
+          <th class="two wide">Código</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>64.23-9-00</td>
+          <td>Caixas econômicas</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th colspan="2">Atividades Econômicas Secundárias</th>
+        </tr>
+        <tr class="small">
+          <th class="two wide">Código</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>00.00-0-00</td>
+          <td>Não informada</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Código e Descrição da Natureza Jurídica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>201-1 - Empresa Pública</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th class="eight wide">Logradouro</th>
+          <th class="two wide">Número</th>
+          <th class="six wide">Complemento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ST BANCARIO SUL QUADRA 04</td>
+          <td>34</td>
+          <td>BLOCO A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th class="two wide">CEP</th>
+          <th class="six wide">Bairro</th>
+          <th class="six wide">Município</th>
+          <th class="two wide">UF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>70.092-900</td>
+          <td>ASA SUL</td>
+          <td>BRASILIA</td>
+          <td>DF</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th class="eight wide">Endereço Eletrônico</th>
+          <th class="eight wide">Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>(61) 3521-8600</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Ente Federativo Responsável (EFR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UNIÃO</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th>Capital Social</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>R$ 45.000.000.000,00 (quarenta e cinco bilhões de reais)</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
+    
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th colspan="2">Quadro de Sócios e Administradores</th>
+        </tr>
+        <tr class="small">
+          <th>Nome</th>
+          <th>Qualificação</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+        <tr>
+          <td>PAULO HENRIQUE ANGELO SOUZA</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>PEDRO DUARTE GUIMARAES</td>
+          <td>16-Presidente</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>CLAUDIO SALITURO</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>EDILSON CARROGI RIBEIRO VIANNA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MATHEUS NEVES SINIBALDI</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>JAIR LUIS MAHL</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>TATIANA THOME DE OLIVEIRA</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>GRYECOS ATTOM VALENTE LOUREIRO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>EDUARDO KRIEGER SCHERER</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>ANTONIO CARLOS FERREIRA DE SOUSA</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MARCOS BRASILIANO ROSA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MAGDA LUCIA DIAS CARDOSO DE CARVALHO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>CELSO LEONARDO DERZIE DE JESUS BARBOSA</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MARCO ANTONIO VARELA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>RAFAEL DE OLIVEIRA MORAIS</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>JORGE LOUZADA KOZLOVSKY</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>LUIZ FELIPE FIGUEIREDO DE ANDRADE</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>RODRIGO SOUZA WERMELINGER</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MESSIAS DOS SANTOS ESTEVES</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>HEITOR SOUZA CUNHA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>HENRIETE ALEXANDRA SARTORI BERNABE</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>MAIKON WILSON PENSO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>TIAGO CORDEIRO DE OLIVEIRA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>ANGELICA DJENANE PHILIPPE CORREA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>LEONARDO GROBA MENDES</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>CLAUDINEY BITENCOURT</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>CHRISTOPHER FRANCO BRAGA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>RODRIGO EDUARDO BAMPI</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>EDUARDO FALK ANTONIO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>RENATA DE SOUZA NARDOTTO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>CRISTINAMBABI DOS ANJOS LIMA</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>YVES DUMARESQ SOBRAL</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>JAIRO DA SILVA MUNIZ SOBRINHO</td>
+          <td>10-Diretor</td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td>JOAO GUSTAVO HAENEL NETO</td>
+          <td>05-Administrador</td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+    
+
+    <table class="ui celled structured compact table">
+      <thead>
+        <tr>
+          <th class="ten wide">Situação Cadastral</th>
+          <th class="six wide">Data da Situação Cadastral</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ATIVA</td>
+          <td>03/11/2005 - 16 anos atrás</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    
+    <!-- {{/if}} -->
+  </div>
+    </div>
+  </div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="desafio reCAPTCHA" src="./Receita WS - Webservice de Dados de CNPJ_files/bframe.html" name="c-twys4pit0o0m" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
